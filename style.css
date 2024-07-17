@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(12, 12, 51);
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(160, 160, 222);
+    font-size: 1.05rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 50px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.firstsection.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.leftsection, .rightsection {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.leftsection.active, .rightsection.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.rightsection img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    width: 200px; /* Set the width to make the image smaller */
+}
+
+.highlight {
+    color: blueviolet;
+}
+
+#element {
+    color: blueviolet;
+}
+
+.secondsection, .thirdsection, .fourthsection, .fifthsection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.secondsection.active, .thirdsection.active, .fourthsection.active, .fifthsection.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.secondsection h1, .thirdsection h1, .fourthsection h1, .fifthsection h1 {
+    font-size: 1.6rem;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.about-content, .skills-content, .projects-content, .contact-content {
+    background: gray; /* Change background color to gray */
+    width: 80vw;
+    margin: 56px 0;
+    padding: 20px;
+    border-radius: 8px;
+    color: white; /* Change text color to white */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.about-content.active, .skills-content.active, .projects-content.active, .contact-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #18182b;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 5px 0;
+    color: lightgray; /* Change list items color */
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.footer ul li::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: lightgray;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.footer ul li:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.footer ul li a {
+    color: lightgray; /* Change list items link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: white; /* Change color on hover */
+}
+
+.footer-rights {
+    text-align: center;
+    padding: 10px;
+    background-color: #121223;
+    position: relative;
+    z-index: 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.footer ul li {
+    animation: slideIn 0.5s ease forwards;
+}
+
+.footer ul li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.footer ul li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.footer ul li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.footer ul li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darkviolet;
+}
+
+/* Back to top button */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: darkviolet;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}

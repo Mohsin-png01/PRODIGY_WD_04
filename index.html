@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohsin - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Mohsin's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstsection">
+            <div class="leftsection">Hi, I'm <span class="highlight">Mohsin</span> and I'm <span id="element"></span></div>
+            <div class="rightsection">
+                <img src="image.jpeg" alt="Mohsin's Picture">
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="secondsection">
+            <span class="text-gray">A Little About Me</span>
+            <h1>About Me</h1>
+            <div class="about-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
+                <p><strong>Education:</strong> Bachelor of Computer Science, XYZ University</p>
+                <p><strong>Professional Experience:</strong></p>
+                <ul>
+                    <li>HTML Developer (2010-2012)</li>
+                    <li>Node.js Developer (2012-2014)</li>
+                    <li>React Developer (2014-2016)</li>
+                    <li>Full Stack Developer (2016-2020)</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section id="skills" class="thirdsection">
+            <span class="text-gray">What I Do Best</span>
+            <h1>Skills</h1>
+            <div class="skills-content">
+                <p>Here are a few technologies I've been working with recently:</p>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section id="projects" class="fourthsection">
+            <span class="text-gray">Some of My Work</span>
+            <h1>Projects</h1>
+            <div class="projects-content">
+                <div class="project">
+                    <h2>Project 1</h2>
+                    <p>Description of Project 1.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project">
+                    <h2>Project 2</h2>
+                    <p>Description of Project 2.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project">
+                    <h2>Project 3</h2>
+                    <p>Description of Project 3.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="contact" class="fifthsection">
+            <span class="text-gray">Get In Touch</span>
+            <h1>Contact Me</h1>
+            <div class="contact-content">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Mohsin Developer Portfolio</h3>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.mohsinportfolio.com | All Rights Reserved
+        </div>
+    </footer>
+    <button id="backToTop">&#8679;</button>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
